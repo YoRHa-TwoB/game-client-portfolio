@@ -16,3 +16,20 @@ for (const button of buttons) {
     for (const option of buttons) option.setAttribute("aria-pressed", String(option === button));
   });
 }
+
+for (const link of document.querySelectorAll("a[data-video]")) {
+  link.addEventListener("click", (event) => {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const player = document.querySelector("#" + link.dataset.video + " video");
+    if (!player || !player.canPlayType("video/mp4")) return;
+    event.preventDefault();
+    const seek = () => { player.currentTime = Number(link.dataset.time); };
+    if (player.readyState >= 1) seek();
+    else player.addEventListener("loadedmetadata", seek, { once: true });
+    for (const other of document.querySelectorAll("video")) {
+      if (other !== player) other.pause();
+    }
+    player.scrollIntoView({ block: "nearest" });
+    player.play().catch(() => { player.focus(); });
+  });
+}
