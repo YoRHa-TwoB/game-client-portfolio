@@ -9,3 +9,8 @@
 .chapters a { color:var(--soft); text-decoration:none; font-size:.82rem; }
 .chapters a:hover, .chapters a:focus-visible { color:var(--accent); text-decoration:underline; }
 .chapters time { font-family:Consolas,monospace; }
+
+.lead .links { column-gap:1rem; row-gap:.65rem }
+.lead .demo-download { display:inline-flex; flex-wrap:wrap; align-items:baseline; gap:.45rem; padding:.48rem .8rem; border:1px solid #72916b; border-radius:3px; color:var(--ink); text-decoration:none }
+.lead .demo-download:hover { border-color:var(--accent); color:var(--accent) }
+.demo-download small { color:var(--soft); font-size:.8rem }
