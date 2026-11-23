@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101411">
+<meta name="description" content="YoRHa-TwoB 的游戏客户端开发作品集。观看 Unity 单线 MOBA 实机片段，浏览 2.5D RPG 与黑龙战斗遥测工具。">
+<title>游戏开发作品集 · YoRHa-TwoB</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到作品</a>
+<header><div class="wrap top"><a class="brand" href="#main"><span class="mark" aria-hidden="true">◧</span> YoRHa-TwoB</a><nav aria-label="项目导航"><a href="#moba">MOBA</a><a href="#rpg">RPG</a><a href="#mod">Mod 工具</a></nav></div></header>
+<main id="main" class="wrap">
+<div class="mast"><h1>游戏开发作品集<span>.</span></h1><p>Unity 客户端开发 <span>/</span> Gameplay 与游戏工具</p></div>
+<section id="moba" aria-labelledby="moba-name">
+<div class="feature">
+<div class="lead"><p class="kicker">SingleLaneMOBA</p><h2 id="moba-name">单线战场</h2><p class="intro">操控太刀虾，跟随兵线穿过峡谷。从一次补刀到摧毁核心，战斗指令、英雄成长和建筑推进串起整场对局。</p><p class="tech">Unity 6 <b>·</b> C# <b>·</b> URP</p><a class="button" href="https://www.bilibili.com/video/BV1Gwh16tE3N/" target="_blank" rel="noopener">在 B 站观看原演示</a></div>
+<figure class="player"><video controls playsinline preload="metadata" poster="./media/lane.webp" aria-label="单线战场早期实机录像，17 秒无声片段"><source src="./media/lane-archive.mp4" type="video/mp4"><a href="./media/lane-archive.mp4">下载单线对局片段</a></video><figcaption><span>单线对局 · 实机片段</span><span class="mono">2026.09.25 <i>/</i> 00:17</span></figcaption></figure>
+</div>
+<div class="lenses"><figure><img loading="lazy" src="./media/hud.webp" alt="战斗 HUD 显示太刀虾的技能栏、刃级及生命条"><figcaption><h3>太刀虾的招式派生</h3><p>普攻衔接见切或纳刀。Q 末段升刃，R 突刺命中后可派生兜割，落地再结算伤害。</p></figcaption></figure>
+<figure><img loading="lazy" src="./media/ravine.webp" alt="从峡谷桥边俯视河道、岩岸及城墙上的旗帜"><figcaption><h3>峡谷里的兵线</h3><p>在斜俯视镜头下点选敌人、追击或停步。两方小兵交战后，存活的一方继续向防御塔推进。</p></figcaption></figure></div>
+</section>
+<section id="rpg" aria-labelledby="rpg-name" class="secondary"><div class="section-copy"><p class="kicker">Exploration RPG</p><h2 id="rpg-name">桥头探索</h2><p class="tech">2.5D RPG 框架 <b>·</b> Unity / C#</p><p>从大厅进入序章，在桥头点地寻路。主线保存位置与朝向，大厅仓库单独保存持有的藏品。</p><p>探索菜单支持三个手动槽和一个快速槽。仓库可以浏览桥头纪念章，也可以翻看旧渡口票根背面的手记。</p></div>
+<div class="gallery"><figure><img id="gallery-image" src="./media/warehouse.webp" loading="lazy" alt="仓库界面设计稿，选中桥头纪念章后显示大图与说明"><figcaption id="gallery-caption" aria-live="polite">仓库收藏页 · 界面设计稿</figcaption></figure>
+<div class="gallery-nav" aria-label="切换 RPG 项目画面"><button type="button" data-shot="warehouse" aria-pressed="true">仓库设计</button><button type="button" data-shot="story-entry" aria-pressed="false">主线入口</button><button type="button" data-shot="warehouse-test" aria-pressed="false">藏品测试</button></div>
+<noscript><a href="./media/story-entry.webp">查看主线入口实机图</a> · <a href="./media/warehouse-test.webp">查看藏品测试实机图</a></noscript></div></section>
+<section id="mod" aria-labelledby="mod-name" class="mod"><div><p class="kicker">MHWI Fatalis Overlay</p><h2 id="mod-name">黑龙战斗遥测</h2><p class="tech">怪物猎人：世界 · 冰原 <b>·</b> C# / WPF</p></div><div><p>把黑龙的血量、部位破坏、发怒与软化倒计时叠加在狩猎画面上。战后可以翻看 JSONL 日志，对照动作与状态变化。</p><div class="links"><a class="button" href="https://www.bilibili.com/video/BV1UiKz6kEeM/" target="_blank" rel="noopener">观看 Mod 演示</a><a href="https://github.com/YoRHa-TwoB/MHWI-FatalisOverlay" target="_blank" rel="noopener">查看项目源码</a></div></div></section>
+</main><footer><div class="wrap"><span>YoRHa-TwoB</span><a href="#main">回到顶部</a></div></footer>
+<script src="./gallery.js"></script></body></html>
